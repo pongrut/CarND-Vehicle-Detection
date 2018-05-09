@@ -39,8 +39,9 @@ conda install -c anaconda scipy
 git clone https://github.com/thtrieu/darkflow
 python setup.py build_ext --inplace
 ```
-
-
+References:<br/>
+[Darkflow](https://github.com/thtrieu/darkflow)<br/>
+[Installation Video](https://youtu.be/PyjBd7IDYZs?t=2m57s)
 
 ### Writeup 
 The use of HOG features and a linear SVM is well-known since 2005. Very recently high-speed neural network based object detectors have emerged which allow object detection faster than real-time. 
