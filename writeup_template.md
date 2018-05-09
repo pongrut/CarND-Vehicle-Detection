@@ -89,7 +89,14 @@ Finished in 37.28185439109802s
 
 
 ### Sliding Window Search vs. You only look once 
+The HOG Sub-sampling to classify vehicle, we have to extract hog features once, for each of a small set of predetermined window sizes (defined by a scale argument), and then can be sub-sampled to get all of its overlaying windows. Each window defined by a scaling factor that impacts the window size. 
 ![windows_search](./figures/windows_search.jpg)
+
+YOLO looks at the image just once and divides up the image into a grid of 13 by 13 cells, each of these cells is responsible for predicting five bounding boxes. A bounding box describes the rectangle that encloses an object.
+YOLO also outputs a confidence score that tells us how confident it is that the predicted bounding box encloses some object.
+
+![yolo](https://statsbot.co/blog/wp-content/uploads/2017/10/b9213-1psfl5og1c9hikxlmijv8-q-e1516381607519-752x223-2-1024x304.png)
+
 
 The code for YOLO object detection is contained in the Step 6: of the IPython notebook.
 Here is an example of vehicle detection code.
