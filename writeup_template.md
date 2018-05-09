@@ -5,7 +5,6 @@ Pongrut Palarpong
 May 11, 2018
 
 ---
-![cam_calibration](./output_images/cam_calibration.jpg)
 
 
 The goals / steps of this project are the following:
