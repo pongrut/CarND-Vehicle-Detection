@@ -130,5 +130,6 @@ Here's a [link to my video result](./project_video_detect_out.mp4)<br/>
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+In this project, I used the Yolov1 model for the Vehicle Detection. YOLO can define the bounding box is more robust than HOG & SVM. However, in some situation pre-trained models confuse in predicting object class such as car and truck, especially a small object image. 
+In high accuracy classify case, it may require using the more accurate model such as YOLOv3, including the use of image segmentation and image upscaling techniques before detection.
 
