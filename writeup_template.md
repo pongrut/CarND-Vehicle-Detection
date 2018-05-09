@@ -40,7 +40,7 @@ git clone https://github.com/thtrieu/darkflow
 python setup.py build_ext --inplace
 ```
 References:<br/>
-[Darkflow](https://github.com/thtrieu/darkflow)<br/>
+[Darkflow GitHub](https://github.com/thtrieu/darkflow)<br/>
 [Installation Video](https://youtu.be/PyjBd7IDYZs?t=2m57s)
 
 ### Writeup 
