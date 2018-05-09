@@ -44,7 +44,48 @@ YOLO Real-Time Object Detection apply convolutional neural network architecture 
 ![CNN](https://www.mathworks.com/content/mathworks/www/en/discovery/deep-learning/jcr:content/mainParsys/band_2123350969_copy_1983242569/mainParsys/columns_1635259577/1/image_2128876021_cop.adapt.full.high.svg/1508444613873.svg)
 Example: A network with many convolutional layers
 
+### My Vehicle Detection Model.
+Model Cfg : yolo.cfg<br/>
+Model weights: olo.weights<br/>
+Model has a coco model name, loading coco labels.
 
+|Source| Train? | Layer description                | Output size     |
+|:----:|:------:|:--------------------------------:|:---------------:|
+|      |        | input                            | (?, 608, 608, 3)|
+| Load |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 608, 608, 32)|
+| Load  |  Yep!  | maxp 2x2p0_2                     | (?, 304, 304, 32)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 304, 304, 64)|
+| Load  |  Yep!  | maxp 2x2p0_2                     | (?, 152, 152, 64)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 152, 152, 128)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 152, 152, 64)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 152, 152, 128)|
+| Load  |  Yep!  | maxp 2x2p0_2                     | (?, 76, 76, 128)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 76, 76, 256)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 76, 76, 128)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 76, 76, 256)|
+| Load  |  Yep!  | maxp 2x2p0_2                     | (?, 38, 38, 256)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 38, 38, 512)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 38, 38, 256)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 38, 38, 512)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 38, 38, 256)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 38, 38, 512)|
+| Load  |  Yep!  | maxp 2x2p0_2                     | (?, 19, 19, 512)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 19, 19, 512)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 19, 19, 512)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | concat [16]                      | (?, 38, 38, 512)|
+| Load  |  Yep!  | conv 1x1p0_1  +bnorm  leaky      | (?, 38, 38, 64)|
+| Load  |  Yep!  | local flatten 2x2                | (?, 19, 19, 256)|
+| Load  |  Yep!  | concat [27, 24]                  | (?, 19, 19, 1280)|
+| Load  |  Yep!  | conv 3x3p1_1  +bnorm  leaky      | (?, 19, 19, 1024)|
+| Load  |  Yep!  | conv 1x1p0_1    linear           | (?, 19, 19, 425)|
+
+Running entirely on CPU
+Finished in 37.28185439109802s
 
 
 ### Sliding Window Search vs. You only look once 
