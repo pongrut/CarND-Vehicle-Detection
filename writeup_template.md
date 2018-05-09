@@ -49,17 +49,15 @@ Example: A network with many convolutional layers
 
 ### Sliding Window Search vs. You only look once 
 
+
 The code for YOLO object detection is contained in the Step 6: of the IPython notebook.
 Here is an example of vehicle detection code.
  
 ```
 image = mpimg.imread('./test_image.jpg')
-start = time() # Get start time
 results = vehicle_detector.detect_vehicle(image)
-print("detection_time: {:.4f} secs.".format(time() - start))
 plt.figure(figsize=(16, 9))
 plt.imshow(image)
-plt.savefig('yolo_result.jpg')
 plt.show() 
 ```
 Here is an example image:
