@@ -39,6 +39,11 @@ conda install -c anaconda scipy
 git clone https://github.com/thtrieu/darkflow
 python setup.py build_ext --inplace
 ```
+
+### Download Cfg and Weight files.
+- Download the cfg file for this project and put it in cfg directory here: [yolo.cfg](https://1drv.ms/u/s!Ai7WHaWwQnevqKhOkFQRx6CYSGni4A)<br/>
+- Download the weight file for this project and put it in bin directory here: [yolo.weights](https://1drv.ms/u/s!Ai7WHaWwQnevqKhPIekeWdCfnq8tsg)<br/>
+
 References:<br/>
 - [Darkflow GitHub](https://github.com/thtrieu/darkflow)<br/>
 - [Installation Video](https://youtu.be/PyjBd7IDYZs?t=2m57s)
