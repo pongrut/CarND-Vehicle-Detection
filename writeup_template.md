@@ -32,11 +32,11 @@ The histogram of gradients (HOG) is a descriptor feature. The HOG algorithm will
 
 
 ![HOG](./figures/HOG.jpg)<br/>
-HOG Features Visualization
+<p align="center">HOG Features Visualization</p>
 
 ![car_color_hist](./figures/car_color_hist.jpg)
 ![notcar_color_hist](./figures/notcar_color_hist.jpg)
-Color Histogram Features Visualization
+<p align="center">Color Histogram Features Visualization</p>
 
 YOLO Real-Time Object Detection apply convolutional neural network architecture to classify an object. CNN architecture suitable for image classification because the image is indeed 2D width and height. CNN can do convolution operation by sweeping the relationship between each part of the image and creating essential filters. This convolution operation makes it easy for CNN to detect objects in multiple locations, difference lightings, or even just some part of objects in an image.
 
