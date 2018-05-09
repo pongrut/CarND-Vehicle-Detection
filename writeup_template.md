@@ -50,12 +50,21 @@ Example: A network with many convolutional layers
 ### Sliding Window Search vs. You only look once 
 
 The code for YOLO object detection is contained in the Step 6: of the IPython notebook.
-
-
-
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
-
+Here is an example of vehicle detection code.
+ 
+```
+image = mpimg.imread('./test_image.jpg')
+start = time() # Get start time
+results = vehicle_detector.detect_vehicle(image)
+print("detection_time: {:.4f} secs.".format(time() - start))
+plt.figure(figsize=(16, 9))
+plt.imshow(image)
+plt.savefig('yolo_result.jpg')
+plt.show() 
+```
+Here is an example image:
 ![yolo_result](./figures/yolo_result.jpg)
+
 
 Ref:<br/>
 [YOLO — You only look once, real time object detection explained](https://towardsdatascience.com/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006)
