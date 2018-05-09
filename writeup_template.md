@@ -65,7 +65,9 @@ Here is an example result image:
 
 
 Ref:<br/>
+[You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)
 [YOLO — You only look once, real time object detection explained](https://towardsdatascience.com/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006)
+[Real-time object detection with YOLO](http://machinethink.net/blog/object-detection-with-yolo/)
 
 ### Video Implementation
 
