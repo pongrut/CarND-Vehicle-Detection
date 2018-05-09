@@ -60,7 +60,7 @@ plt.figure(figsize=(16, 9))
 plt.imshow(image)
 plt.show() 
 ```
-Here is an example image:
+Here is an example result image:
 ![yolo_result](./figures/yolo_result.jpg)
 
 
