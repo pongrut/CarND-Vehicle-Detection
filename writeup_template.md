@@ -31,8 +31,8 @@ The above pipeline using HOG features and a linear SVM is well-known since 2005.
 The histogram of gradients (HOG) is a descriptor feature. The HOG algorithm will check every pixel about how much darker the surrounding pixels are and then specify the direction that pixel is getting darker, then counts the occurrences of gradient orientation in localized portions of an image. The HOG result is features that use in support vector machine for the classification task.
 
 
-![HOG](./figures/HOG.jpg)
-HOG Features Visualization<br/>
+![HOG](./figures/HOG.jpg)<br/>
+HOG Features Visualization
 
 ![car_color_hist](./figures/car_color_hist.jpg)
 ![notcar_color_hist](./figures/notcar_color_hist.jpg)
