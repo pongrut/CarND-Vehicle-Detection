@@ -26,7 +26,13 @@ You're reading it!
 
 The above pipeline using HOG features and a linear SVM is well-known since 2005. Very recently extremely fast neural network based object detectors have emerged which allow object detection faster than realtime. I merely cloned the original darknet repository and applied YOLO to the project video. I only needed to do a minor code modification to allow saving videos directly. The result is quite amazing. As no sliding windows are used the detection is extremely fast. A frame is passed to the network and processed precisely once, hence the name YOLO — “you only look once”.
 
-### Histogram of Oriented Gradients (HOG)
+### Histogram of Oriented Gradients (HOG) vs Convolutional Neural Network (CNN).
+
+The histogram of gradients (HOG) is a descriptor feature. The HOG algorithm will check every pixel about how much darker the surrounding pixels are and then specify the direction that pixel is getting darker, then counts the occurrences of gradient orientation in localized portions of an image. The HOG result are features that will be used in suport vector machine for classification task.
+
+YOLO Real-Time Object Detection apply convolutional neural network architecture to classify an object.
+
+
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
