@@ -14,17 +14,16 @@ The goals / steps of this project are the following:
 
 
 
-## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
-### Writeup / README
+### README
+xx
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Vehicle-Detection/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
 
-You're reading it!
+### Writeup 
+The use of HOG features and a linear SVM is well-known since 2005. Very recently high-speed neural network based object detectors have emerged which allow object detection faster than real-time. 
 
-The above pipeline using HOG features and a linear SVM is well-known since 2005. Very recently extremely fast neural network based object detectors have emerged which allow object detection faster than realtime. I merely cloned the original darknet repository and applied YOLO to the project video. I only needed to do a minor code modification to allow saving videos directly. The result is quite amazing. As no sliding windows are used the detection is extremely fast. A frame is passed to the network and processed precisely once, hence the name YOLO — “you only look once”.
+However, the most popular method of doing object detection nowadays is to use The YOLO is a very effective way for Real-time Object Detection, with only a small amount of code, which yields impressive results.
 
 ### Histogram of Oriented Gradients (HOG) vs. Convolutional Neural Network (CNN)
 
