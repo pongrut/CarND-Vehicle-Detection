@@ -89,7 +89,7 @@ Finished in 37.28185439109802s
 
 
 ### Sliding Window Search vs. You only look once 
-
+![windows_search](./figures/windows_search.jpg)
 
 The code for YOLO object detection is contained in the Step 6: of the IPython notebook.
 Here is an example of vehicle detection code.
@@ -105,7 +105,7 @@ Here is an example result image:
 ![yolo_result](./figures/yolo_result.jpg)
 
 
-Ref:<br/>
+References:<br/>
 [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)<br/>
 [YOLO — You only look once, real time object detection explained](https://towardsdatascience.com/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006)<br/>
 [Real-time object detection with YOLO](http://machinethink.net/blog/object-detection-with-yolo/)
