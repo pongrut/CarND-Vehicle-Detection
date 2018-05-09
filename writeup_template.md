@@ -15,8 +15,31 @@ The goals / steps of this project are the following:
 
 
 ---
-### README
-xx
+### INSTALLATION
+```
+conda create -n yolo python=3.6 anaconda jupyter
+activate yolo
+conda install -c anaconda numpy 
+conda install -c anaconda cython
+conda install -c anaconda tensorflow-gpu
+conda install -c conda-forge matplotlib 
+conda install -c conda-forge opencv
+conda install -c anaconda pip 
+pip install pillow
+conda install -c conda-forge ffmpeg
+conda install -c conda-forge moviepy
+conda install -c anaconda scipy
+```
+
+
+```
+# download and install Microsoft Visual C++ 14.0  Visual C++ 2015 Build Tools
+# http://landinghub.visualstudio.com/visual-cpp-build-tools
+# http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe.
+git clone https://github.com/thtrieu/darkflow
+python setup.py build_ext --inplace
+```
+
 
 
 ### Writeup 
