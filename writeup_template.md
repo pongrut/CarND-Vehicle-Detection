@@ -30,6 +30,14 @@ The above pipeline using HOG features and a linear SVM is well-known since 2005.
 
 The histogram of gradients (HOG) is a descriptor feature. The HOG algorithm will check every pixel about how much darker the surrounding pixels are and then specify the direction that pixel is getting darker, then counts the occurrences of gradient orientation in localized portions of an image. The HOG result is features that use in support vector machine for the classification task.
 
+
+![HOG](./figures/HOG.jpg)
+HOG Features Visualization<br/>
+
+![car_color_hist](./figures/car_color_hist.jpg)
+![notcar_color_hist](./figures/notcar_color_hist.jpg)
+Color Histogram Features Visualization
+
 YOLO Real-Time Object Detection apply convolutional neural network architecture to classify an object. CNN architecture suitable for image classification because the image is indeed 2D width and height. CNN can do convolution operation by sweeping the relationship between each part of the image and creating essential filters. This convolution operation makes it easy for CNN to detect objects in multiple locations, difference lightings, or even just some part of objects in an image.
 
 ![CNN](https://www.mathworks.com/content/mathworks/www/en/discovery/deep-learning/jcr:content/mainParsys/band_2123350969_copy_1983242569/mainParsys/columns_1635259577/1/image_2128876021_cop.adapt.full.high.svg/1508444613873.svg)
